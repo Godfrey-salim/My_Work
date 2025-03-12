@@ -1,9 +1,10 @@
+# A python program that takes in starting index and stopping index, outputs all the numbers in between and after that reverse.
 def display_menu():
     print("1. Main Menu")
     print("2. Exit")
     choice = input("Enter your choice (1/2): ")
     return choice
-
+## Get list choice ( enter your own list or use default{1-10})
 def get_list_choice():
     while True:
         choice = input("Choose between:\n1. Enter your own list\n2. Use list (1-10) given\nEnter your choice (1/2): ")
@@ -17,7 +18,7 @@ def get_list_choice():
             return 'back'
         else:
             print("Invalid choice. Please enter 1 or 2.")
-
+## Get the slicing indices (start of the slice and stopping of the slice)
 def get_slice_indices():
     while True:
         try:
@@ -34,7 +35,7 @@ def get_slice_indices():
             return start_index, stop_index
         except ValueError:
             print("Invalid input. Please enter valid integers or leave blank for default.")
-
+## slice results and reverse option
 def reverse_option(slice_result):
     while True:
         choice = input("Reverse:\n1. Yes\n2. No\nEnter your choice (1/2): ")
@@ -49,7 +50,7 @@ def reverse_option(slice_result):
             return 'back'
         else:
             print("Invalid choice. Please enter 1 or 2.")
-
+## The main menu after back option is activated or at the end of the program.
 def main_menu():
     while True:
         list_choice = get_list_choice()
