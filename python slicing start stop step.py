@@ -1,3 +1,5 @@
+# A python program that uses the python slicing concept ( basic slicing, negative slicing and so on), and also does reverse.
+---
 def display_menu():
     print("1. Main Menu")
     print("2. Exit")
