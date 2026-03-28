@@ -1,3 +1,4 @@
+#FreeCodecamp lab journey
 #Apply Discount Function
 def apply_discount(price, discount):
     #Determining whether the arguments are integer or float
